@@ -38,6 +38,9 @@ select * from AddressBookTable where state='K.N' order by(firstName)
 --UC9-Adding type of the contact
 alter table addressBookTable add bookType varchar(200)
 update AddressBookTable set bookType='Family' where personId=1 or personId=6
-update AddressBookTable set bookType='Friend' where personId=4 or personId=2
+update AddressBookTable set bookType='Friend' where personId=4 or personId=3
 update AddressBookTable set bookType='Profession' where personId=7
-
+--UC10 Calculating the size of the record based on type
+select count(phoneNumber)as NoOfContact,
+bookType from AddressBookTable group by bookType
+select * from AddressBookTable
