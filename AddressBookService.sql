@@ -15,3 +15,8 @@ zip bigint,
 PhoneNumber bigint,
 EMail varchar(50)
 )
+------------UC3 INSERT RECORDS INTO THE TABLE------------
+insert into AddressBookTable values
+('Manoj','Sai','A.kNagar','NlR','A.P',524001,7458965477,'sai@gmail.com'),
+('Jonam','Ias','J.KColony','LSG','K.N',524005,7745698547,'ias@gmail.com')
+select * from AddressBookTable
