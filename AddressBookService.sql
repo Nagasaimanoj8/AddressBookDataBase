@@ -32,3 +32,6 @@ select * from AddressBookTable where state='K.N'and city='LSG'
 -------------UC7 CALACULATING THE SIZE OF THR RECORD BY STATE OR CITY -------------------
 select count(phonenumber)as NoOfContact,state from AddressBookTable group by state
 select count(Phonenumber)as NoofContact,city from AddressBookTable group by city
+--------------UC8 RETRIVE RECORD BASE ON CITY SORTED ORDER-------------
+select * from AddressBookTable where city='chennai' order by(firstName)
+select * from AddressBookTable where state='Tamil Nadu' order by(firstName)
