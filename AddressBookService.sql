@@ -29,3 +29,6 @@ delete from AddressBookTable where FirstName='Bharath' and LastName='P'
 ------------UC6 RETRIVING RECORD BASED ON CITY OR STATE----------
 select * from AddressBookTable where state='A.P'and city='NLR'
 select * from AddressBookTable where state='K.N'and city='LSG'
+-------------UC7 CALACULATING THE SIZE OF THR RECORD BY STATE OR CITY -------------------
+select count(phonenumber)as NoOfContact,state from AddressBookTable group by state
+select count(Phonenumber)as NoofContact,city from AddressBookTable group by city
