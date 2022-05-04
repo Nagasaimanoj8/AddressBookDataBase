@@ -44,3 +44,7 @@ update AddressBookTable set bookType='Profession' where personId=7
 select count(phoneNumber)as NoOfContact,
 bookType from AddressBookTable group by bookType
 select * from AddressBookTable
+--UC11 Adding contact in Two type
+insert into AddressBookTable values ('Vijay','Kumar','Anna Nagar','Kottaiyam','Kerala',869456,9654973250,'vk@gmail.com','Friend'),
+insert into AddressBookTable values ('John','Kumar','Lisbon','portugal','Europe',540021,351210205168,'lis@gmail.com','Family')
+select * from AddressBookTable
