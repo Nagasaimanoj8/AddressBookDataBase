@@ -26,3 +26,6 @@ update AddressBookTable set email='iam@gmail.com' where FirstName='Jonam' and La
 update AddressBookTable set FirstName='Bharath', LastName='P'where FirstName='Jonam' and LastName='Ias'
 ------------UC5 DELETE THE RECORD FROM TABLE---------
 delete from AddressBookTable where FirstName='Bharath' and LastName='P'
+------------UC6 RETRIVING RECORD BASED ON CITY OR STATE----------
+select * from AddressBookTable where state='A.P'and city='NLR'
+select * from AddressBookTable where state='K.N'and city='LSG'
