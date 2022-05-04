@@ -35,3 +35,9 @@ select count(Phonenumber)as NoofContact,city from AddressBookTable group by city
 --------------UC8 RETRIVE RECORD BASE ON CITY SORTED ORDER-------------
 select * from AddressBookTable where city='NLR' order by(firstName)
 select * from AddressBookTable where state='K.N' order by(firstName)
+--UC9-Adding type of the contact
+alter table addressBookTable add bookType varchar(200)
+update AddressBookTable set bookType='Family' where personId=1 or personId=6
+update AddressBookTable set bookType='Friend' where personId=4 or personId=2
+update AddressBookTable set bookType='Profession' where personId=7
+
